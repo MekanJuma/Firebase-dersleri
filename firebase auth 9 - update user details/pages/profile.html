@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Profile Page</title>
+        <link rel="stylesheet" href="../css/profile.css" />
+    </head>
+    <body>
+        <div class="profile-card">
+            <div class="card-header">
+                <img id="profileImage" src="" alt="Profile Image" />
+                <div class="default-image"></div>
+                <input type="file" id="imageUpload" />
+            </div>
+
+            <div class="card-body">
+                <input type="text" id="name" placeholder="Name" />
+                <input type="text" id="email" placeholder="Email" />
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="New password"
+                />
+                <div class="actions">
+                    <button id="updateName" class="action-button">
+                        Update Name
+                    </button>
+                    <button id="updatePass" class="action-button">
+                        Update Pass
+                    </button>
+                    <button id="uploadImageBtn" class="action-button">
+                        Change Image
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-footer">
+                <button class="action-button" id="back-to-main">
+                    Back to Main
+                </button>
+                <button id="deleteUser" class="action-button delete">
+                    Delete User
+                </button>
+            </div>
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+        <script src="../js/common.js"></script>
+        <script type="module" src="../js/profile.js"></script>
+    </body>
+</html>
